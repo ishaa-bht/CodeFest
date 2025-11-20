@@ -21,6 +21,11 @@ export function GovLogin({ onNavigate }: GovLoginProps) {
     }
   };
 
+  const handleDemoLogin = () => {
+    setUsername('officer');
+    setPassword('demo123');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 flex items-center justify-center px-4">
       <div className="max-w-md w-full">
@@ -73,10 +78,14 @@ export function GovLogin({ onNavigate }: GovLoginProps) {
               </button>
             </form>
 
-            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-              <p className="text-xs text-blue-800 font-semibold mb-2">Demo Credentials:</p>
-              <p className="text-xs text-blue-700">Username: officer</p>
-              <p className="text-xs text-blue-700">Password: demo123</p>
+            <div className="mt-6">
+              <button
+                onClick={handleDemoLogin}
+                className="w-full px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors flex items-center justify-center gap-2"
+              >
+                <Shield className="h-5 w-5" />
+                Auto-fill Demo Credentials
+              </button>
             </div>
 
             <button
