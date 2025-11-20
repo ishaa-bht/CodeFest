@@ -49,7 +49,7 @@ function AppContent() {
       {!isGovPage && (
         <button
           onClick={() => setCurrentPage('gov-login')}
-          className="fixed bottom-8 right-8 px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white font-semibold rounded-lg shadow-lg transition-colors"
+          className="fixed top-8 right-8 px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white font-semibold rounded-lg shadow-lg transition-colors"
         >
           Officer Login
         </button>
