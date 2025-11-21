@@ -39,7 +39,7 @@ export function Layout({ children, variant = 'citizen' }: LayoutProps) {
 
       <main>{children}</main>
 
-      <footer className={`${isGovPortal ? 'bg-blue-900' : 'bg-blue-900'} text-white mt-16`}>
+      <footer className={`${isGovPortal ? 'bg-blue-900' : 'bg-blue-900'} text-white `}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <p className="text-sm">© 2025 Government of Nepal - Digital Transparency Initiative</p>
